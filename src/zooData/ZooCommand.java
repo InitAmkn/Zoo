@@ -1,4 +1,4 @@
-package enun;
+package zooData;
 
 public enum ZooCommand {
     DELETE("delete"),

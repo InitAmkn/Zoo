@@ -3,7 +3,7 @@ package terminal.menu;
 import java.util.ArrayList;
 import java.util.List;
 
-import enun.ZooPopulation;
+import zooData.ZooPopulation;
 
 public class MenuAnimalGroupsShow extends MenuAnimalGroups {
 

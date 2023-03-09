@@ -1,7 +1,6 @@
 package animals;
 
-import animals.Lion;
-import enun.ZooPopulation;
+import zooData.ZooPopulation;
 
 public class Lion extends Animal {
     private int maneVolume;

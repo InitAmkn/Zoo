@@ -3,8 +3,8 @@ package terminal.command;
 import java.util.Arrays;
 import java.util.List;
 
-import enun.ZooCommand;
-import enun.ZooPopulation;
+import zooData.ZooCommand;
+import zooData.ZooPopulation;
 
 public class Command {
 
@@ -50,8 +50,8 @@ public class Command {
         return parameters;
     }
 
-    @Override
-    public String toString() {
-        return String.format("%s - %s - %s", action, animal, Arrays.toString(parameters.toArray()));
-    }
+//    @Override
+//    public String toString() {
+//        return String.format("%s - %s - %s", action, animal, Arrays.toString(parameters.toArray()));
+//    }
 }

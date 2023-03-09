@@ -2,8 +2,8 @@ package terminal.menu;
 
 import java.util.ArrayList;
 
-import enun.ZooCommand;
-import enun.ZooPopulation;
+import zooData.ZooCommand;
+import zooData.ZooPopulation;
 import terminal.menu.create.MenuCreate;
 import terminal.menu.create.MenuCreateLion;
 import terminal.menu.create.MenuCreateSnake;
@@ -58,7 +58,7 @@ public class View {
             result.add(animalGroupsShow.select());
         }
 
-        System.out.println(String.join("\s", result));
+         System.out.println(String.join("\s", result));
         return String.join("\s", result);
 
     }

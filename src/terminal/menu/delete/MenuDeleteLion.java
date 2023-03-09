@@ -2,7 +2,7 @@ package terminal.menu.delete;
 
 import java.util.ArrayList;
 
-import enun.ZooPopulation;
+import zooData.ZooPopulation;
 
 public class MenuDeleteLion extends MenuDelete {
 

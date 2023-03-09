@@ -2,7 +2,7 @@ package terminal.menu.create;
 
 import java.util.ArrayList;
 
-import enun.ZooPopulation;
+import zooData.ZooPopulation;
 
 public class MenuCreateWolf extends MenuCreate {
 

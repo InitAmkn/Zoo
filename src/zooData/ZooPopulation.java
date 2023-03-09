@@ -1,4 +1,4 @@
-package enun;
+package zooData;
 
 public enum ZooPopulation {
     LION("lion"),

@@ -3,14 +3,14 @@ package terminal.menu;
 import java.util.ArrayList;
 import java.util.List;
 
-import enun.ZooCommand;
+import zooData.ZooCommand;
 
 public class MenuActions extends Menu {
 
     protected String[] introductoryPhrase = { "", "Select an action:" };
     protected String[] add = { "1", "Add an animal", ZooCommand.ADD.getName() };
     protected String[] delete = { "2", "Delete an animal", ZooCommand.DELETE.getName() };
-    protected String[] show = { "3", "Show all animals", ZooCommand.SHOW.getName() };
+    protected String[] show = { "3", "Show animals", ZooCommand.SHOW.getName() };
 
     @Override
     List<String[]> getMenu() {

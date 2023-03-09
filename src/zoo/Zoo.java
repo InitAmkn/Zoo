@@ -46,7 +46,7 @@ public class Zoo {
 
     public void showAllSnake() {
         System.out.println();
-        System.out.println("All the snake in the zoo: ");
+        System.out.println("All the snakes in the zoo: ");
         System.out.println(snakes);
     }
 

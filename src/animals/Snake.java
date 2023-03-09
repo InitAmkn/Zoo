@@ -1,6 +1,6 @@
 package animals;
 
-import enun.ZooPopulation;
+import zooData.ZooPopulation;
 
 public class Snake extends Animal {
 
