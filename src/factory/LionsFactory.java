@@ -1,8 +1,8 @@
-package OOP.zoo.factory;
+package factory;
 
 import java.util.ArrayList;
 
-import OOP.zoo.animals.Lion;
+import animals.Lion;
 
 public class LionsFactory {
 

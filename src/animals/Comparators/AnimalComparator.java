@@ -1,8 +1,8 @@
-package OOP.zoo.animals.Comparators;
+package animals.Comparators;
 
 import java.util.Comparator;
 
-import OOP.zoo.animals.Animal;
+import animals.Animal;
 
 public class AnimalComparator implements Comparator<Animal> {
 

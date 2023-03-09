@@ -1,9 +1,9 @@
-package OOP.zoo.cage;
+package cage;
 
 import java.time.LocalDate;
 import java.util.List;
 
-import OOP.zoo.animals.Animal;
+import animals.Animal;
 
 public interface AnimalCage<T extends Animal> {
 
@@ -13,11 +13,12 @@ public interface AnimalCage<T extends Animal> {
 
     public abstract LocalDate checkDateTheLastFeeding();
 
-    public abstract T releaseAnimalFromCage();
+    public abstract T releaseAnimalFromCage(String name);
 
     // public abstract Time cleanCage();
 
     default public List<T> sortByAge(List<T> animalList) {
         return animalList;
     }
+
 }

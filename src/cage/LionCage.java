@@ -1,11 +1,11 @@
-package OOP.zoo.cage;
+package cage;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import OOP.zoo.animals.Lion;
-import OOP.zoo.animals.Comparators.LionComparator;
+import animals.Lion;
+import animals.Comparators.LionComparator;
 
 public class LionCage implements AnimalCage<Lion> {
 
@@ -61,11 +61,17 @@ public class LionCage implements AnimalCage<Lion> {
     }
 
     @Override
-    public Lion releaseAnimalFromCage() {
+    public Lion releaseAnimalFromCage(String name) {
+
         if (lionsInCage.size() > 0) {
-            Lion lionRemoved = lionsInCage.get(0);
-            lionsInCage.remove(0);
-            return lionRemoved;
+            for (Lion lion : lionsInCage) {
+                if (lion.getName().equalsIgnoreCase(name)) {
+                    Lion lionRemoved = lion;
+                    lionsInCage.remove(lion);
+                    return lionRemoved;
+                }
+            }
+
         }
         return null;
     }

@@ -1,11 +1,11 @@
-package OOP.zoo.cage;
+package cage;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import OOP.zoo.animals.Wolf;
-import OOP.zoo.animals.Comparators.WolfComparator;
+import animals.Wolf;
+import animals.Comparators.WolfComparator;
 
 public class WolfCage implements AnimalCage<Wolf> {
 
@@ -62,12 +62,17 @@ public class WolfCage implements AnimalCage<Wolf> {
         Collections.sort(wolfsInCage, new WolfComparator());
     }
 
-    @Override
-    public Wolf releaseAnimalFromCage() {
+    public Wolf releaseAnimalFromCage(String name) {
+
         if (wolfsInCage.size() > 0) {
-            Wolf wolfRemoved = wolfsInCage.get(0);
-            wolfsInCage.remove(0);
-            return wolfRemoved;
+            for (Wolf snake : wolfsInCage) {
+                if (snake.getName().equals(name)) {
+                    Wolf wolfRemoved = snake;
+                    wolfsInCage.remove(snake);
+                    return wolfRemoved;
+                }
+            }
+
         }
         return null;
     }

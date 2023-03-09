@@ -1,6 +1,7 @@
-package OOP.zoo.animals;
+package animals;
 
-import OOP.zoo.ZooPopulation;
+import animals.Lion;
+import enun.ZooPopulation;
 
 public class Lion extends Animal {
     private int maneVolume;
@@ -38,7 +39,7 @@ public class Lion extends Animal {
     @Override
     public String toString() {
 
-        return String.format("%S; name:%S; Age:%S; Count Limbs:%S; Weight:%S; Mane Volume:%S",
+        return String.format("%S: name:%S; Age:%S; Count Limbs:%S; Weight:%S; Mane Volume:%S",
                 TYPE,
                 name,
                 getAge(),

@@ -1,4 +1,4 @@
-package OOP.zoo.animals;
+package animals;
 
 import java.time.LocalDate;
 
@@ -8,6 +8,9 @@ public abstract class Animal {
     protected int yearBirth;
     protected int countLimbs;
     protected double weight;
+
+    public Animal() {
+    };
 
     public Animal(String name,
             int yearBirth,

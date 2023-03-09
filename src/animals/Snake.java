@@ -1,6 +1,6 @@
-package OOP.zoo.animals;
+package animals;
 
-import OOP.zoo.ZooPopulation;
+import enun.ZooPopulation;
 
 public class Snake extends Animal {
 
@@ -14,7 +14,10 @@ public class Snake extends Animal {
             double weight,
             int bodyLength) {
 
-        super(name, yearBirth, countLimbs, weight);
+        super(name,
+                yearBirth,
+                countLimbs,
+                weight);
         this.bodyLength = bodyLength;
     }
 
@@ -39,7 +42,8 @@ public class Snake extends Animal {
     @Override
     public String toString() {
 
-        return String.format("name:%S; Age:%S; Count Limbs:%S; Weight:%S; body Length:%S",
+        return String.format("%S: name:%S: Age:%S; Count Limbs:%S; Weight:%S; body Length:%S",
+                TYPE,
                 name,
                 getAge(),
                 countLimbs,

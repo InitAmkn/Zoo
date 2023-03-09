@@ -1,6 +1,6 @@
-package OOP.zoo.animals;
+package animals;
 
-import OOP.zoo.ZooPopulation;
+import enun.ZooPopulation;
 
 // Создать класс Wolf, наследника класса Animal.
 
@@ -13,7 +13,10 @@ public class Wolf extends Animal {
     public static final String TYPE = ZooPopulation.WOLF.getName();
 
     public Wolf(String name, int yearBirth, int countLimbs, double weight) {
-        super(name, yearBirth, countLimbs, weight);
+        super(name,
+                yearBirth,
+                countLimbs,
+                weight);
 
     }
 
@@ -30,7 +33,7 @@ public class Wolf extends Animal {
     @Override
     public String toString() {
 
-        return String.format("%S; name:%S; Age:%S; Count Limbs:%S; Weight:%S",
+        return String.format("%S: name:%S; Age:%S; Count Limbs:%S; Weight:%S",
                 TYPE,
                 name,
                 getAge(),
